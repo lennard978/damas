@@ -29,6 +29,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   block-size: 100vh;
+  background-attachment: fixed;
   background-image: url("../images/600.webp");
   background-repeat: no-repeat;
   background-size: cover;
