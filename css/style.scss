@@ -20,6 +20,11 @@ header {
     a {
       text-decoration: none;
       color: var(--global-light);
+      img{
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+      }
     }
   }
   display: flex;
@@ -34,7 +39,7 @@ header {
   color: var(--global-light);
   text-align: center;
   h1 {
-    padding: 30px;
+    padding: 20px;
     line-height: 1.2;
     font-size: 2.4rem;
   }

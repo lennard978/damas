@@ -5,3 +5,7 @@ export const Romanian = {
 export const English = {
   title: "Casino Dealers Training School",
 };
+
+export const German = {
+  title: "Casino-Dealer-Ausbildungsschule",
+};
