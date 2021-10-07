@@ -31,3 +31,11 @@
 
 let vh = window.innerHeight * 0.01
 document.documentElement.style.setProperty('--vh', `${vh}px`)
+
+let tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: '#about',
+  },
+})
+
+tl.from('.why', { x: -300, opacity: 0, duration: 2 })

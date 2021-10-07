@@ -45,15 +45,36 @@ header {
     padding: 1rem 1rem 0 1rem;
     line-height: 1.2;
     font-size: 2.4rem;
+    color: var(--global-background-light);
   }
   h2 {
     margin: 0;
     font-family: cursive;
     font-style: italic;
     font-size: 1.3rem;
+    font-weight: 900;
+    color: var(--global-background-light);
   }
   p{
     padding: 0 2rem;
+    color: var(--global-background-light);
+  }
+}
+
+.youtube{
+  width: 100% !important;
+  height: auto !important;
+  background-color: var(--global-background-dark);
+  display: grid;
+  grid-template-columns: 1fr;
+  h2{
+    color: var(--global-background-light);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2rem;
+  }
+  iframe{
+    height: 50vh;
   }
 }
 
@@ -66,7 +87,7 @@ header {
     h2 {
       margin: 0;
       text-transform: uppercase;
-      color: var(--global-dark);
+      color: var(--global-background-dark);
     }
   }
   .why {
@@ -76,13 +97,13 @@ header {
     margin: 0.3rem;
     padding: 0.3rem;
     article {
-      color: var(--global-light);
+      color: var(--global-background-light);
       background-color: var(--global-background-dark);
       padding: 1.3rem 1.6rem;
       box-shadow: 3px 3px 3px var(--global-dark);
       ol{
         li{
-          list-style-type: circle;
+          list-style-type: disc;
         }
       }
     }
@@ -95,13 +116,13 @@ header {
     padding: 3rem 0 0 0;
     text-align: center;
     article {
-      color: var(--global-dark);
+      color: var(--global-background-dark);
       box-shadow: 1px 1px 5px var(--box-shadow);
       transition: all 0.3s ease;
       padding: .7rem;
       cursor: pointer;
       &:hover {
-        color: var(--global-light);
+        color: var(--global-background-light);
         background-color: var(--global-background-dark);
       }
       &:hover i {
@@ -124,6 +145,7 @@ header {
     text-align: center;
     padding: 3rem 1rem;
     margin: 0;
+    color: var(--global-background-dark);
   }
 }
 
@@ -137,7 +159,7 @@ header {
     h2 {
       margin: 0;
       text-transform: uppercase;
-      color: var(--global-light);
+      color: var(--global-background-light);
     }
   }
   .card{
@@ -148,7 +170,7 @@ header {
       padding: .5rem 0;
       width: 100%;
       background-color: rgba(20, 20, 20, 0.8);
-      color: white;
+      color: var(--global-background-light);
       position: absolute;
       bottom: 0;
       left: 0;
@@ -156,7 +178,7 @@ header {
   }
   .gallery-wrap{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
     grid-auto-flow: row dense;
     gap: .5rem;
     padding: 0 1rem;
@@ -187,7 +209,7 @@ header {
   h2 {
     margin: 0;
     text-transform: uppercase;
-    color: var(--global-light);
+    color: var(--global-background-light);
     }
   P{
     color: var(--global-background-light);
@@ -233,6 +255,21 @@ header {
 }
 
 @media screen and (min-width: 480px) {
+  .youtube{
+    grid-template-columns: 10px 1fr 10px;
+    h2{
+      grid-column: 1/3;
+      color: var(--global-background-light);
+      text-align: center;
+      text-transform: uppercase;
+      padding: 2rem;
+    }
+    iframe{
+      grid-column: 2/3;
+      height: 50vh;
+      padding-bottom: 2rem;
+    }
+  }
   #about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -257,9 +294,13 @@ header {
     }
   }
   #gallery{
+  .gallery-wrap{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
     .gallery-wrap img[src$='_big.jpg']{
       grid-row-end: span 2;
       grid-column-end: span 2;
+
     }
     .gallery-wrap img[src$='_small.jpg']{
       grid-column-end: span 1;
@@ -283,6 +324,16 @@ header {
 }
 
 @media screen and (min-width: 769px) {
+  .youtube{
+    grid-template-columns: 100px 1fr 100px;
+    h2{
+      grid-column: 1/4;
+    }
+    iframe{
+      grid-column: 2/3;
+      height: 60vh;
+    }
+  }
   header {
     background-image: url('../images/header1.webp');
     display: grid;
@@ -347,6 +398,16 @@ header {
   }
 }
 @media screen and (min-width: 1024px) {
+  .youtube{
+    grid-template-columns: 200px 1fr 1fr 200px;
+    h2{
+      grid-column: 1/5;
+    }
+    iframe{
+      grid-column: 2/4;
+      height: 60vh;
+    }
+  }
   header {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -410,6 +471,13 @@ header {
   }
 }
 @media screen and (min-width: 1200px) {
+  .youtube{
+    grid-template-columns: 200px 1fr 1fr 200px;
+    iframe{
+      grid-column: 2/4;
+      height: 70vh;
+    }
+  }
   #gallery{
     display: grid;
     grid-template-columns: 100px 1fr 100px;
