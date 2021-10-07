@@ -15,15 +15,15 @@ body {
 header {
   .lang {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: .5rem;
+    left: .5rem;
     a {
       text-decoration: none;
       color: var(--global-light);
       img{
-        width: 50px;
-        height: 50px;
-        margin-left: 20px;
+        width: 2rem;
+        height: 2rem;
+        margin-left: 1rem;
       }
     }
   }
@@ -32,7 +32,6 @@ header {
   justify-content: center;
   align-items: center;
   block-size: 100vh;
-  background-attachment: fixed;
   background-image: url('../images/600.webp');
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,7 +39,7 @@ header {
   color: var(--global-light);
   text-align: center;
   h1 {
-    padding: 20px;
+    padding: 1rem;
     line-height: 1.2;
     font-size: 2.4rem;
   }
@@ -65,7 +64,7 @@ header {
   .why {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
     margin: 0.3rem;
     padding: 0.3rem;
     article {
@@ -86,7 +85,7 @@ header {
       color: var(--global-dark);
       box-shadow: 1px 1px 5px var(--box-shadow);
       transition: all 0.3s ease;
-      padding: 10px;
+      padding: .7rem;
       cursor: pointer;
       &:hover {
         color: var(--global-light);
@@ -111,6 +110,57 @@ header {
   p {
     text-align: center;
     padding: 1rem 1rem;
+    margin: 0;
+  }
+}
+
+#gallery{
+  background: var(--global-background-dark);
+  padding-bottom: 2rem;
+  .title {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    h2 {
+      margin: 0;
+      text-transform: uppercase;
+      color: var(--global-light);
+    }
+  }
+  .card{
+    position: relative;
+    h3{
+      text-align: center;
+      margin: 0;
+      padding: .5rem 0;
+      width: 100%;
+      background-color: rgba(240, 248, 255, 0.527);
+      color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .gallery-wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-flow: row dense;
+    gap: .5rem;
+    padding: 0 1rem;
+  }
+  .gallery-wrap img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 3px var(--global-background-light);
+    border-radius: .2rem;
+  }
+  .gallery-wrap img[src$='_big.jpg']{
+    grid-row-end: span 1;
+    grid-column-end: span 1;
+  }
+  .gallery-wrap img[src$='_small.jpg']{
+    grid-column-end: span 1;
+    grid-row-end: span 1;
   }
 }
 
@@ -136,6 +186,16 @@ header {
       display: grid;
       grid-template-columns: 1fr;
       justify-content: center;
+    }
+  }
+  #gallery{
+    .gallery-wrap img[src$='_big.jpg']{
+      grid-row-end: span 2;
+      grid-column-end: span 2;
+    }
+    .gallery-wrap img[src$='_small.jpg']{
+      grid-column-end: span 1;
+      grid-row-end: span 1;
     }
   }
 }
@@ -178,6 +238,16 @@ header {
       justify-content: center;
     }
   }
+  #gallery{
+    .gallery-wrap img[src$='_big.jpg']{
+      grid-row-end: span 1;
+      grid-column-end: span 1;
+    }
+    .gallery-wrap img[src$='_small.jpg']{
+      grid-column-end: span 1;
+      grid-row-end: span 1;
+    }
+  }
 }
 @media screen and (min-width: 1024px) {
   header {
@@ -214,6 +284,16 @@ header {
       display: grid;
       grid-template-columns: 1fr;
       justify-content: center;
+    }
+  }
+  #gallery{
+    .gallery-wrap img[src$='_big.jpg']{
+      grid-row-end: span 2;
+      grid-column-end: span 2;
+    }
+    .gallery-wrap img[src$='_small.jpg']{
+      grid-column-end: span 1;
+      grid-row-end: span 1;
     }
   }
 }

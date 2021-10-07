@@ -29,7 +29,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   block-size: 100vh;
-  background-attachment: fixed;
   background-image: url("../images/600.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,8 +39,8 @@ header {
 
 header .lang {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: .5rem;
+  left: .5rem;
 }
 
 header .lang a {
@@ -50,13 +49,13 @@ header .lang a {
 }
 
 header .lang a img {
-  width: 50px;
-  height: 50px;
-  margin-left: 20px;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
 }
 
 header h1 {
-  padding: 20px;
+  padding: 1rem;
   line-height: 1.2;
   font-size: 2.4rem;
 }
@@ -90,7 +89,7 @@ header h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
   margin: 0.3rem;
   padding: 0.3rem;
 }
@@ -123,7 +122,7 @@ header h2 {
           box-shadow: 1px 1px 5px var(--box-shadow);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  padding: 10px;
+  padding: .7rem;
   cursor: pointer;
 }
 
@@ -149,6 +148,72 @@ header h2 {
 .bottom-banner p {
   text-align: center;
   padding: 1rem 1rem;
+  margin: 0;
+}
+
+#gallery {
+  background: var(--global-background-dark);
+  padding-bottom: 2rem;
+}
+
+#gallery .title {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#gallery .title h2 {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--global-light);
+}
+
+#gallery .card {
+  position: relative;
+}
+
+#gallery .card h3 {
+  text-align: center;
+  margin: 0;
+  padding: .5rem 0;
+  width: 100%;
+  background-color: rgba(240, 248, 255, 0.527);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#gallery .gallery-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-flow: row dense;
+  gap: .5rem;
+  padding: 0 1rem;
+}
+
+#gallery .gallery-wrap img {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 1px 1px 3px var(--global-background-light);
+          box-shadow: 1px 1px 3px var(--global-background-light);
+  border-radius: .2rem;
+}
+
+#gallery .gallery-wrap img[src$='_big.jpg'] {
+  -ms-grid-row-span: 1;
+      grid-row-end: span 1;
+  -ms-grid-column-span: 1;
+      grid-column-end: span 1;
+}
+
+#gallery .gallery-wrap img[src$='_small.jpg'] {
+  -ms-grid-column-span: 1;
+      grid-column-end: span 1;
+  -ms-grid-row-span: 1;
+      grid-row-end: span 1;
 }
 
 @media screen and (min-width: 480px) {
@@ -192,6 +257,18 @@ header h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #gallery .gallery-wrap img[src$='_big.jpg'] {
+    -ms-grid-row-span: 2;
+        grid-row-end: span 2;
+    -ms-grid-column-span: 2;
+        grid-column-end: span 2;
+  }
+  #gallery .gallery-wrap img[src$='_small.jpg'] {
+    -ms-grid-column-span: 1;
+        grid-column-end: span 1;
+    -ms-grid-row-span: 1;
+        grid-row-end: span 1;
   }
 }
 
@@ -255,6 +332,18 @@ header h2 {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  #gallery .gallery-wrap img[src$='_big.jpg'] {
+    -ms-grid-row-span: 1;
+        grid-row-end: span 1;
+    -ms-grid-column-span: 1;
+        grid-column-end: span 1;
+  }
+  #gallery .gallery-wrap img[src$='_small.jpg'] {
+    -ms-grid-column-span: 1;
+        grid-column-end: span 1;
+    -ms-grid-row-span: 1;
+        grid-row-end: span 1;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -315,6 +404,18 @@ header h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #gallery .gallery-wrap img[src$='_big.jpg'] {
+    -ms-grid-row-span: 2;
+        grid-row-end: span 2;
+    -ms-grid-column-span: 2;
+        grid-column-end: span 2;
+  }
+  #gallery .gallery-wrap img[src$='_small.jpg'] {
+    -ms-grid-column-span: 1;
+        grid-column-end: span 1;
+    -ms-grid-row-span: 1;
+        grid-row-end: span 1;
   }
 }
 /*# sourceMappingURL=style.css.map */
