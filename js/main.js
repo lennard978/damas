@@ -32,10 +32,51 @@
 let vh = window.innerHeight * 0.01
 document.documentElement.style.setProperty('--vh', `${vh}px`)
 
-let tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: '#about',
-  },
-})
+gsap.registerPlugin(ScrollTrigger)
 
-tl.from('.why', { x: -300, opacity: 0, duration: 2 })
+// gsap.from('.why', {
+//   x: -500,
+//   duration: 1,
+//   opacity: 0,
+//   scrollTrigger: {
+//     trigger: '.why',
+//     start: 'center center',
+//     end: 'bottom top',
+//     markers: true,
+//     //events: onEnter onLeave onEnterBack onLeaveBack
+//     toggleActions: 'restart complete reverse reset',
+//     //options: play, pause, resume, reset, restart, complete, reverse, none
+//   },
+// })
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: '.why',
+      start: 'top center',
+      end: '2% 2%',
+      // markers: true,
+      scrub: true,
+      // pin: true,
+    },
+  })
+  .from('.top h3', { x: innerWidth * 1, opacity: 0 })
+  .from('.top p', { x: innerWidth * -1, opacity: 0 })
+  .from('.top li', { y: innerHeight * 1, opacity: 0, rotate: 360 })
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: '.bottom',
+      start: '30% center',
+      end: '2% 2%',
+      // markers: true,
+      scrub: true,
+      // pin: true,
+    },
+  })
+  .from('.bottom h3', { x: innerWidth * 1, opacity: 0 })
+  .from('.bottom p:nth-child(2)', { x: innerWidth * -1, opacity: 0 })
+  .from('.bottom p:nth-child(3)', { x: innerWidth * 1, opacity: 0 })
+  .from('.bottom p:nth-child(4)', { y: innerHeight * -1, opacity: 0 })
+  .from('.bottom p:nth-child(5)', { y: innerHeight * 1, opacity: 0 })

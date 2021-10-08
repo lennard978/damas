@@ -80,6 +80,7 @@ header {
 
 #about {
   background-color: var(--global-background-light);
+  overflow: hidden;
   .title {
     text-align: center;
     padding-top: 2rem;
@@ -121,11 +122,11 @@ header {
       transition: all 0.3s ease;
       padding: .7rem;
       cursor: pointer;
-      &:hover {
+      &:hover, &:active {
         color: var(--global-background-light);
         background-color: var(--global-background-dark);
       }
-      &:hover i {
+      &:hover i, &:active i {
         color: var(--global-background-light);
       }
       i {

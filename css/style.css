@@ -102,6 +102,7 @@ header p {
 
 #about {
   background-color: var(--global-background-light);
+  overflow: hidden;
 }
 
 #about .title {
@@ -165,12 +166,12 @@ header p {
   cursor: pointer;
 }
 
-#about .banner article:hover {
+#about .banner article:hover, #about .banner article:active {
   color: var(--global-background-light);
   background-color: var(--global-background-dark);
 }
 
-#about .banner article:hover i {
+#about .banner article:hover i, #about .banner article:active i {
   color: var(--global-background-light);
 }
 
