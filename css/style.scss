@@ -324,6 +324,22 @@ header {
   }
 }
 
+#testimonials{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .title{
+    width: 100%;
+    text-align: center;
+  }
+  .card{
+    width: 40%;
+  }
+  img{
+    width: 40%;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .youtube{
     grid-template-columns: 100px 1fr 100px;

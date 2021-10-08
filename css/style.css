@@ -427,6 +427,30 @@ header p {
   }
 }
 
+#testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#testimonials .title {
+  width: 100%;
+  text-align: center;
+}
+
+#testimonials .card {
+  width: 40%;
+}
+
+#testimonials img {
+  width: 40%;
+}
+
 @media screen and (min-width: 769px) {
   .youtube {
     -ms-grid-columns: 100px 1fr 100px;
