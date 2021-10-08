@@ -42,8 +42,8 @@ header {
 
 header .lang {
   position: absolute;
-  top: .5rem;
-  left: .5rem;
+  top: 0.5rem;
+  left: 0.5rem;
 }
 
 header .lang a {
@@ -162,7 +162,7 @@ header p {
           box-shadow: 1px 1px 5px var(--box-shadow);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  padding: .7rem;
+  padding: 0.7rem;
   cursor: pointer;
 }
 
@@ -171,7 +171,8 @@ header p {
   background-color: var(--global-background-dark);
 }
 
-#about .banner article:hover i, #about .banner article:active i {
+#about .banner article:hover i,
+#about .banner article:active i {
   color: var(--global-background-light);
 }
 
@@ -216,7 +217,7 @@ header p {
 #gallery .card p {
   text-align: center;
   margin: 0;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   width: 100%;
   background-color: rgba(20, 20, 20, 0.8);
   color: var(--global-background-light);
@@ -231,7 +232,7 @@ header p {
   -ms-grid-columns: (minmax(175px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
   grid-auto-flow: row dense;
-  gap: .5rem;
+  gap: 0.5rem;
   padding: 0 1rem;
 }
 
@@ -240,7 +241,7 @@ header p {
   height: 100%;
   -webkit-box-shadow: 1px 1px 3px var(--global-background-light);
           box-shadow: 1px 1px 3px var(--global-background-light);
-  border-radius: .2rem;
+  border-radius: 0.2rem;
 }
 
 #gallery .gallery-wrap img[src$='_big.jpg'] {
@@ -292,9 +293,9 @@ header p {
           box-shadow: 1px 1px 5px var(--box-shadow);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  padding: 1.2rem .7rem;
+  padding: 1.2rem 0.7rem;
   cursor: pointer;
-  margin: .5rem 1rem;
+  margin: 0.5rem 1rem;
   text-align: center;
 }
 
@@ -315,7 +316,7 @@ header p {
 }
 
 #courses article .box p {
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   color: var(--global-background-light);
   text-align: left;
 }
@@ -324,6 +325,185 @@ header p {
   color: var(--global-background-light);
   padding: 1.5rem 1rem;
   text-align: center;
+}
+
+#games {
+  background: var(--global-background-light);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#games .title {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+#games .title h2 {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--global-background-dark);
+}
+
+#games article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+#games article .box {
+  background: var(--global-background-dark);
+  color: var(--global-background-light);
+  margin: 1rem;
+}
+
+#games article .box h3 {
+  text-align: center;
+  padding: 0 .5rem;
+}
+
+#games article .box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#games article .box p {
+  padding: 0 0.5rem;
+}
+
+#cost {
+  background: var(--global-background-dark);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+#cost .title {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+#cost .title h2 {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--global-background-light);
+}
+
+#cost .title P {
+  color: var(--global-background-light);
+  padding: 0 1.2rem;
+  text-align: left;
+}
+
+#cost .title-image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 2rem;
+}
+
+#cost .title-image img {
+  width: 100px;
+  height: 100px;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+#cost .title-image img:hover, #cost .title-image img:active {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+#opportunities {
+  background: url("../images/games/world-map.png");
+  padding-bottom: 2rem;
+}
+
+#opportunities .title {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+#opportunities .title h2 {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--global-background-dark);
+}
+
+#opportunities P {
+  color: var(--global-background-dark);
+  padding: 0 1.2rem;
+  text-align: left;
+}
+
+#job {
+  background: url("../images/games/cruiser.png");
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 2rem;
+}
+
+#job .title {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+#job .title h2 {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--global-background-dark);
+}
+
+#job P {
+  color: var(--global-background-dark);
+  padding: 0 1.2rem;
+  text-align: left;
+}
+
+#cursuri-online {
+  background: url("../images/games/money-1.png");
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 2rem;
+}
+
+#cursuri-online .title {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+#cursuri-online .title h2 {
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--global-background-dark);
+}
+
+#cursuri-online P {
+  color: var(--global-background-dark);
+  padding: 0 1.2rem;
+  text-align: left;
 }
 
 @media screen and (min-width: 480px) {
@@ -563,6 +743,29 @@ header p {
     -ms-grid-column-span: 3;
     grid-column: 1/4;
   }
+  #games {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #games article {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  #cost {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #cost .title-image {
+    padding-right: 2rem;
+  }
+  #cost .title-image img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -668,13 +871,36 @@ header p {
     grid-column: 2/6;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   #courses .rest-text {
     -ms-grid-column: 1;
     -ms-grid-column-span: 5;
     grid-column: 1/6;
+  }
+  #cost {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100px 1fr 1fr 100px;
+        grid-template-columns: 100px 1fr 1fr 100px;
+  }
+  #cost .title {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+  }
+  #cost .title-image {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+    grid-column: 5/6;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    padding-right: 2rem;
+  }
+  #cost .title-image img {
+    width: 200px;
+    height: 200px;
   }
 }
 

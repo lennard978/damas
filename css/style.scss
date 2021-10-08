@@ -28,12 +28,12 @@ header {
   text-align: center;
   .lang {
     position: absolute;
-    top: .5rem;
-    left: .5rem;
+    top: 0.5rem;
+    left: 0.5rem;
     a {
       text-decoration: none;
       color: var(--global-light);
-      img{
+      img {
         width: 2rem;
         height: 2rem;
         margin-left: 1rem;
@@ -55,25 +55,25 @@ header {
     font-weight: 900;
     color: var(--global-background-light);
   }
-  p{
+  p {
     padding: 0 2rem;
     color: var(--global-background-light);
   }
 }
 
-.youtube{
+.youtube {
   width: 100% !important;
   height: auto !important;
   background-color: var(--global-background-dark);
   display: grid;
   grid-template-columns: 1fr;
-  h2{
+  h2 {
     color: var(--global-background-light);
     text-align: center;
     text-transform: uppercase;
     padding: 2rem;
   }
-  iframe{
+  iframe {
     height: 50vh;
   }
 }
@@ -102,8 +102,8 @@ header {
       background-color: var(--global-background-dark);
       padding: 1.3rem 1.6rem;
       box-shadow: 3px 3px 3px var(--global-dark);
-      ol{
-        li{
+      ol {
+        li {
           list-style-type: disc;
         }
       }
@@ -120,13 +120,15 @@ header {
       color: var(--global-background-dark);
       box-shadow: 1px 1px 5px var(--box-shadow);
       transition: all 0.3s ease;
-      padding: .7rem;
+      padding: 0.7rem;
       cursor: pointer;
-      &:hover, &:active {
+      &:hover,
+      &:active {
         color: var(--global-background-light);
         background-color: var(--global-background-dark);
       }
-      &:hover i, &:active i {
+      &:hover i,
+      &:active i {
         color: var(--global-background-light);
       }
       i {
@@ -150,7 +152,7 @@ header {
   }
 }
 
-#gallery{
+#gallery {
   background: var(--global-background-dark);
   padding-bottom: 2rem;
   .title {
@@ -163,12 +165,12 @@ header {
       color: var(--global-background-light);
     }
   }
-  .card{
+  .card {
     position: relative;
-    p{
+    p {
       text-align: center;
       margin: 0;
-      padding: .5rem 0;
+      padding: 0.5rem 0;
       width: 100%;
       background-color: rgba(20, 20, 20, 0.8);
       color: var(--global-background-light);
@@ -177,77 +179,77 @@ header {
       left: 0;
     }
   }
-  .gallery-wrap{
+  .gallery-wrap {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
     grid-auto-flow: row dense;
-    gap: .5rem;
+    gap: 0.5rem;
     padding: 0 1rem;
   }
-  .gallery-wrap img{
+  .gallery-wrap img {
     width: 100%;
     height: 100%;
     box-shadow: 1px 1px 3px var(--global-background-light);
-    border-radius: .2rem;
+    border-radius: 0.2rem;
   }
-  .gallery-wrap img[src$='_big.jpg']{
+  .gallery-wrap img[src$='_big.jpg'] {
     grid-row-end: span 1;
     grid-column-end: span 1;
   }
-  .gallery-wrap img[src$='_small.jpg']{
+  .gallery-wrap img[src$='_small.jpg'] {
     grid-column-end: span 1;
     grid-row-end: span 1;
   }
 }
 
-#courses{
+#courses {
   display: grid;
   background: var(--global-background-dark);
-  .title{
+  .title {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 2rem;
-  h2 {
-    margin: 0;
-    text-transform: uppercase;
-    color: var(--global-background-light);
+    h2 {
+      margin: 0;
+      text-transform: uppercase;
+      color: var(--global-background-light);
     }
-  P{
-    color: var(--global-background-light);
-    padding: 0 1.2rem;
-    text-align: left;
+    P {
+      color: var(--global-background-light);
+      padding: 0 1.2rem;
+      text-align: left;
     }
   }
-  article{
+  article {
     display: grid;
-    .box{
+    .box {
       color: var(--global-dark);
       box-shadow: 1px 1px 5px var(--box-shadow);
       transition: all 0.3s ease;
-      padding: 1.2rem .7rem;
+      padding: 1.2rem 0.7rem;
       cursor: pointer;
-      margin: .5rem 1rem;
+      margin: 0.5rem 1rem;
       text-align: center;
       // border: 1px solid var(--global-background-light);
       &:hover {
         background: var(--global-background-light);
-        i{
+        i {
           color: var(--global-background-dark);
         }
-        p{
+        p {
           color: var(--global-background-dark);
         }
       }
-      i{
+      i {
         color: var(--global-background-light);
       }
-      p{
-        padding: 0 .5rem;
+      p {
+        padding: 0 0.5rem;
         color: var(--global-background-light);
         text-align: left;
       }
     }
-    .rest-text{
+    .rest-text {
       color: var(--global-background-light);
       padding: 1.5rem 1rem;
       text-align: center;
@@ -255,17 +257,154 @@ header {
   }
 }
 
+#games {
+  background: var(--global-background-light);
+  display: grid;
+  grid-template-columns: 1fr;
+  .title {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    grid-column: 1/5;
+    h2 {
+      margin: 0;
+      text-transform: uppercase;
+      color: var(--global-background-dark);
+    }
+  }
+  article {
+    display: grid;
+    grid-template-columns: 1fr;
+    .box {
+      background: var(--global-background-dark);
+      color: var(--global-background-light);
+      margin: 1rem;
+      h3 {
+        text-align: center;
+        padding: 0 .5rem;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      p {
+        padding: 0 0.5rem;
+      }
+    }
+  }
+}
+
+#cost{
+  background: var(--global-background-dark);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .title {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    h2 {
+      margin: 0;
+      text-transform: uppercase;
+      color: var(--global-background-light);
+    }
+    P {
+      color: var(--global-background-light);
+      padding: 0 1.2rem;
+      text-align: left;
+    }
+  }
+  .title-image{
+    align-self: center;
+    margin-bottom: 2rem;
+    img{
+      width: 100px;
+      height: 100px;
+      transition: transform 1s ease;
+      &:hover, &:active{
+        transform: rotate(360deg);
+        transition: transform 1s ease;
+      }
+    }
+  }
+}
+
+#opportunities{
+  background: url('../images/games/world-map.png');
+  padding-bottom: 2rem;
+  .title {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    h2 {
+      margin: 0;
+      text-transform: uppercase;
+      color: var(--global-background-dark);
+    }
+  }
+  P {
+    color: var(--global-background-dark);
+    padding: 0 1.2rem;
+    text-align: left;
+  }
+}
+
+#job{
+  background: url('../images/games/cruiser.png');
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 2rem;
+  .title {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    h2 {
+      margin: 0;
+      text-transform: uppercase;
+      color: var(--global-background-dark);
+    }
+  }
+  P {
+    color: var(--global-background-dark);
+    padding: 0 1.2rem;
+    text-align: left;
+  }
+}
+
+#cursuri-online{
+  background: url('../images/games/money-1.png');
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 2rem;
+  .title {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    h2 {
+      margin: 0;
+      text-transform: uppercase;
+      color: var(--global-background-dark);
+    }
+  }
+  P {
+    color: var(--global-background-dark);
+    padding: 0 1.2rem;
+    text-align: left;
+  }
+}
+
 @media screen and (min-width: 480px) {
-  .youtube{
+  .youtube {
     grid-template-columns: 10px 1fr 10px;
-    h2{
+    h2 {
       grid-column: 1/3;
       color: var(--global-background-light);
       text-align: center;
       text-transform: uppercase;
       padding: 2rem;
     }
-    iframe{
+    iframe {
       grid-column: 2/3;
       height: 50vh;
       padding-bottom: 2rem;
@@ -294,59 +433,61 @@ header {
       justify-content: center;
     }
   }
-  #gallery{
-  .gallery-wrap{
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-    .gallery-wrap img[src$='_big.jpg']{
+  #gallery {
+    .gallery-wrap {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .gallery-wrap img[src$='_big.jpg'] {
       grid-row-end: span 2;
       grid-column-end: span 2;
-
     }
-    .gallery-wrap img[src$='_small.jpg']{
+    .gallery-wrap img[src$='_small.jpg'] {
       grid-column-end: span 1;
       grid-row-end: span 1;
     }
   }
-  #courses{
+  #courses {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    .title{
+    .title {
       grid-column: 1/3;
-      p{
+      p {
         text-align: center;
       }
     }
-    article{
+    article {
       display: grid;
       grid-column: 1/3;
     }
   }
 }
 
-#testimonials{
+#testimonials {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  .title{
+  .title {
     width: 100%;
     text-align: center;
   }
-  .card{
+  .card {
     width: 40%;
   }
-  img{
+  img {
     width: 40%;
   }
 }
 
+
+
+
 @media screen and (min-width: 769px) {
-  .youtube{
+  .youtube {
     grid-template-columns: 100px 1fr 100px;
-    h2{
+    h2 {
       grid-column: 1/4;
     }
-    iframe{
+    iframe {
       grid-column: 2/3;
       height: 60vh;
     }
@@ -388,39 +529,56 @@ header {
       justify-content: center;
     }
   }
-  #gallery{
-    .gallery-wrap img[src$='_big.jpg']{
+  #gallery {
+    .gallery-wrap img[src$='_big.jpg'] {
       grid-row-end: span 1;
       grid-column-end: span 1;
     }
-    .gallery-wrap img[src$='_small.jpg']{
+    .gallery-wrap img[src$='_small.jpg'] {
       grid-column-end: span 1;
       grid-row-end: span 1;
     }
   }
-  #courses{
+  #courses {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    .title{
+    .title {
       grid-column: 1/4;
     }
-    article{
+    article {
       grid-column: 1/4;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
     }
-    .rest-text{
+    .rest-text {
       grid-column: 1/4;
+    }
+  }
+  #games{
+    grid-template-columns: 1fr;
+    article{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  #cost{
+    flex-direction: row;
+    .title-image{
+      padding-right: 2rem;
+      img{
+        width: 200px;
+        height: 200px;
+      }
     }
   }
 }
 @media screen and (min-width: 1024px) {
-  .youtube{
+  .youtube {
     grid-template-columns: 200px 1fr 1fr 200px;
-    h2{
+    h2 {
       grid-column: 1/5;
     }
-    iframe{
+    iframe {
       grid-column: 2/4;
       height: 60vh;
     }
@@ -461,54 +619,74 @@ header {
       justify-content: center;
     }
   }
-  #gallery{
-    .gallery-wrap img[src$='_big.jpg']{
+  #gallery {
+    .gallery-wrap img[src$='_big.jpg'] {
       grid-row-end: span 2;
       grid-column-end: span 2;
     }
-    .gallery-wrap img[src$='_small.jpg']{
+    .gallery-wrap img[src$='_small.jpg'] {
       grid-column-end: span 1;
       grid-row-end: span 1;
     }
   }
-  #courses{
+  #courses {
     display: grid;
     grid-template-columns: 100px repeat(4, 1fr) 100px;
-    .title{
+    .title {
       grid-column: 2/6;
     }
-    article{
+    article {
       grid-column: 2/6;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    .rest-text{
+    .rest-text {
       grid-column: 1/6;
     }
   }
+  #cost{
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 100px;
+    .title{
+      grid-column: 2/4;
+    }
+    .title-image{
+      grid-column: 5/6;
+      justify-self: center;
+      padding-right: 2rem;
+      img{
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
 }
+
+
+
+
 @media screen and (min-width: 1200px) {
-  .youtube{
+  .youtube {
     grid-template-columns: 200px 1fr 1fr 200px;
-    iframe{
+    iframe {
       grid-column: 2/4;
       height: 70vh;
     }
   }
-  #gallery{
+  #gallery {
     display: grid;
     grid-template-columns: 100px 1fr 100px;
-    .title{
+    .title {
       grid-column: 2/3;
     }
-    .gallery-wrap{
+    .gallery-wrap {
       grid-column: 2/3;
     }
-    .gallery-wrap img[src$='_big.jpg']{
+    .gallery-wrap img[src$='_big.jpg'] {
       grid-row-end: span 1;
       grid-column-end: span 1;
     }
-    .gallery-wrap img[src$='_small.jpg']{
+    .gallery-wrap img[src$='_small.jpg'] {
       grid-column-end: span 1;
       grid-row-end: span 1;
     }
