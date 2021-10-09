@@ -453,9 +453,10 @@ header {
     text-align: left;
   }
   a{
-    display: block;
+    display: inline-block;
     text-decoration: none;
-    color: var(--global-dark)
+    color: var(--global-dark);
+    word-wrap: break-word;
   }
 }
 /*****************************

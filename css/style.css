@@ -591,9 +591,10 @@ header p {
 }
 
 #cursuri-online a {
-  display: block;
+  display: inline-block;
   text-decoration: none;
   color: var(--global-dark);
+  word-wrap: break-word;
 }
 
 /*****************************
