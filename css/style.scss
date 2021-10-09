@@ -435,6 +435,7 @@ header {
   background: url('../images/games/money-1.png');
   background-position: center center;
   background-size: cover;
+  background-color: var(--global-background-light);
   padding-bottom: 2rem;
   .title {
     text-align: center;
@@ -450,6 +451,11 @@ header {
     color: var(--global-background-dark);
     padding: 0 1.2rem;
     text-align: left;
+  }
+  a{
+    display: block;
+    text-decoration: none;
+    color: var(--global-dark)
   }
 }
 /*****************************
