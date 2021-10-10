@@ -388,9 +388,14 @@ header {
 }
 
 #opportunities{
-  background: url('../images/games/world-map.png');
-  
+  background: url('../images/games/world-map.webp');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-bottom: 2rem;
+  min-height: 100vh;
+  display: grid;
+
   .title {
     text-align: center;
     padding-top: 2rem;
@@ -409,11 +414,14 @@ header {
 }
 
 #job{
-  background: url('../images/games/cruiser.png');
+  background: url('../images/games/cruiser.webp');
   background-color: hsl(175, 50%, 6%);
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
   padding-bottom: 2rem;
+  min-height: 100vh;
+  display: grid;
   .title {
     text-align: center;
     padding-top: 2rem;
@@ -433,11 +441,13 @@ header {
 }
 
 #cursuri-online{
-  background: url('../images/games/money-1.png');
+  background: url('../images/games/money-1.webp');
   background-position: center center;
   background-size: cover;
   background-color: var(--global-background-light);
   padding-bottom: 2rem;
+  min-height: 100vh;
+  display: grid;
   .title {
     text-align: center;
     padding-top: 2rem;
@@ -467,15 +477,16 @@ header {
 ******************************/
 #testimonials {
   background: var(--global-background-dark);
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   padding-bottom: 1rem;
+  min-height: 40vh;
   .title {
     text-align: center;
     padding-top: 2rem;
     grid-column: 1/2;
+    
     h2 {
       margin: 0;
       text-transform: uppercase;
@@ -490,6 +501,7 @@ header {
     border-radius: .3rem;
     border-left: 1rem solid #000;
     box-shadow: .1rem .1rem 1rem hsla(0, 0%, 77%, 0.535);
+    display: none;
     .card-body{
       display: flex;
       .card-image{
@@ -509,7 +521,7 @@ header {
         margin: 1rem 1rem;
         q{
           margin-bottom: .5rem;
-          font-size: small;
+          // font-size: small;
         }
         p{
           margin: 0;
@@ -531,7 +543,7 @@ header {
       background: var(--global-background-light);
       color: var(--global-background-dark);
       font-weight: 500;
-      margin: 0 .5rem .5rem;
+      margin: 1rem;
       padding: .2rem 1.5rem;
       border-radius: 0rem;
       cursor: pointer;
@@ -552,9 +564,10 @@ header {
 *******************************
 ******************************/
 #contact{
-  background: url('../images/games/contact.jpg');
+  background: url('../images/games/contact.webp');
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
   display: grid;
   grid-template-columns: 1fr;
   color: var(--global-background-light);
@@ -575,6 +588,13 @@ header {
     ul{
       list-style-type: none;
       padding-left: 1rem;
+      a{
+        color: var(--global-background-dark);
+        text-decoration: none;
+        &:hover,&:active{
+          color: var(--global-background-light);
+        }
+      }
     }
   }
   .partners{
@@ -588,8 +608,9 @@ header {
     ul{
       list-style-type: none;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);  
       padding-left: 0;
+      text-align: center;
       img{
         width: 100px;
         height: auto;

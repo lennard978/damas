@@ -517,8 +517,14 @@ header p {
 }
 
 #opportunities {
-  background: url("../images/games/world-map.png");
+  background: url("../images/games/world-map.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-bottom: 2rem;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
 }
 
 #opportunities .title {
@@ -540,11 +546,15 @@ header p {
 }
 
 #job {
-  background: url("../images/games/cruiser.png");
+  background: url("../images/games/cruiser.webp");
   background-color: #081716;
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
   padding-bottom: 2rem;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
 }
 
 #job .title {
@@ -566,11 +576,14 @@ header p {
 }
 
 #cursuri-online {
-  background: url("../images/games/money-1.png");
+  background: url("../images/games/money-1.webp");
   background-position: center center;
   background-size: cover;
   background-color: var(--global-background-light);
   padding-bottom: 2rem;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
 }
 
 #cursuri-online .title {
@@ -605,13 +618,16 @@ header p {
 ******************************/
 #testimonials {
   background: var(--global-background-dark);
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  gap: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow: hidden;
   padding-bottom: 1rem;
+  min-height: 40vh;
 }
 
 #testimonials .title {
@@ -639,6 +655,7 @@ header p {
   border-left: 1rem solid #000;
   -webkit-box-shadow: 0.1rem 0.1rem 1rem rgba(196, 196, 196, 0.535);
           box-shadow: 0.1rem 0.1rem 1rem rgba(196, 196, 196, 0.535);
+  display: none;
 }
 
 #testimonials .card .card-body {
@@ -672,7 +689,6 @@ header p {
 
 #testimonials .card .card-body .card-text q {
   margin-bottom: .5rem;
-  font-size: small;
 }
 
 #testimonials .card .card-body .card-text p {
@@ -700,7 +716,7 @@ header p {
   background: var(--global-background-light);
   color: var(--global-background-dark);
   font-weight: 500;
-  margin: 0 .5rem .5rem;
+  margin: 1rem;
   padding: .2rem 1.5rem;
   border-radius: 0rem;
   cursor: pointer;
@@ -721,9 +737,10 @@ header p {
 *******************************
 ******************************/
 #contact {
-  background: url("../images/games/contact.jpg");
+  background: url("../images/games/contact.webp");
   background-position: center center;
   background-size: cover;
+  background-repeat: no-repeat;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -757,6 +774,15 @@ header p {
   padding-left: 1rem;
 }
 
+#contact .mail ul a {
+  color: var(--global-background-dark);
+  text-decoration: none;
+}
+
+#contact .mail ul a:hover, #contact .mail ul a:active {
+  color: var(--global-background-light);
+}
+
 #contact .partners {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -783,6 +809,7 @@ header p {
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   padding-left: 0;
+  text-align: center;
 }
 
 #contact .partners ul img {

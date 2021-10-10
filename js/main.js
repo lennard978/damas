@@ -118,6 +118,7 @@ const changePerson = () => {
 }
 
 rightBtn.addEventListener('click', function () {
+  cardBox.style.display = 'flex'
   changePerson()
   gsap.from(cardBox, { opacity: 0, x: innerWidth * 1 })
   if (testmonials.length - 1 === index) {
