@@ -333,6 +333,7 @@ header {
           }
         }
         p{
+          font-size: small;
           padding: 1rem 1rem;
           margin: 0;
         }
@@ -468,10 +469,12 @@ header {
   background: var(--global-background-dark);
   display: grid;
   grid-template-columns: 1fr;
+  gap: 1rem;
+  overflow: hidden;
+  padding-bottom: 1rem;
   .title {
     text-align: center;
     padding-top: 2rem;
-    padding-bottom: 1rem;
     grid-column: 1/2;
     h2 {
       margin: 0;
@@ -479,32 +482,66 @@ header {
       color: var(--global-background-light);
     }
   }
-  .card {
-    background: var(--global-background-dark);
-    box-shadow: 1px 1px 5px var(--global-background-light);
-    margin: .5rem;
-    border-radius: .5rem;
-    img {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
+  .card{
+    grid-column: 1/2;
+    background: var(--global-background-light);
+    color: var(--global-background-dark);
+    margin: 0 1rem 1rem 1rem;
+    border-radius: .3rem;
+    border-left: 1rem solid #000;
+    box-shadow: .1rem .1rem 1rem hsla(0, 0%, 77%, 0.535);
+    .card-body{
+      display: flex;
+      .card-image{
+        img{
+          width: 5rem;
+          height: 5rem;
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: top;
+          margin: .7rem;
+        }
+      }
+      .card-text{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 1rem 1rem;
+        q{
+          margin-bottom: .5rem;
+          font-size: small;
+        }
+        p{
+          margin: 0;
+          font-size: smaller;
+          font-style: italic;
+          padding-top: .3rem;
+          color: gray;
+        }
+        h5{
+          margin: 0;
+        }
+      }
     }
-    h3{
-      margin: 0;
-      padding-top: .3rem;
-      text-align: center;
-      color: var(--global-background-light);
-    }
-    p{
-      margin: 0;
-      padding: .5rem;
-      color: var(--global-background-light);
-    }
-    .star-rating{
-      text-align: right;
-      padding-right: .4rem;
-      padding-bottom: .4rem;
-      color: yellow;
+  }
+  .btnBox{
+    display: flex;
+    justify-content: center;
+    button{
+      background: var(--global-background-light);
+      color: var(--global-background-dark);
+      font-weight: 500;
+      margin: 0 .5rem .5rem;
+      padding: .2rem 1.5rem;
+      border-radius: 0rem;
+      cursor: pointer;
+      transition: all .3s ease;
+      border: 1px solid var(--global-background-dark);
+      &:hover, &:active{
+        background: var(--global-background-dark);
+        color: var(--global-background-light);
+        border: 1px solid var(--global-background-light);
+      }
     }
   }
 }
@@ -538,9 +575,6 @@ header {
     ul{
       list-style-type: none;
       padding-left: 1rem;
-      li{
-
-      }
     }
   }
   .partners{

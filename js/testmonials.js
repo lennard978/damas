@@ -1,0 +1,130 @@
+const testmonials = [
+  {
+    image: 'images/testimonials/valentin-2018.jpg',
+    text: 'An unforgettable experience having in view that I came from another country only for this course ... Antonia and Vali - serious and funny, with a mix of very efficient teaching, atmosphere extraordinary! ..... Shuftle, ​​please :)',
+    name: 'Valentin',
+    position: 'Casino',
+  },
+  {
+    image: 'images/testimonials/a01.jpg',
+    text: ' Thanks for giving me the opportunity to know people who love their job. They do all the best possible to help you, to teach you, to have fun, to make you relax what you do when you work. Thank you from the bottom of my heart.',
+    name: 'Vlad Mihai',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/b04.jpg',
+    text: 'The best school and teachers ever!!!',
+    name: 'Maria &amp; Radu',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/c06.jpg',
+    text: 'I"m glad I had two teachers like you, will. Thank you for everything you have done for me! I gladly recommend you to everyone, you are the ones better!',
+    name: 'Vlad M.',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/d08.jpg',
+    text: 'I can say that I greet you from Ibiza, now I do it with the one greater respect I came to you with a minimum of I know him and in one year I was promoted 3 times! I highly recommend this based on much professionalism_ Convince yourself alone maybe we will meet in the shortest time, among "foreigners" !! Thousands of thanks !!',
+    name: 'Vasi',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/e011.jpg',
+    text: 'which I managed to accumulate as a The lesson of what I learned from you makes me I respect you much more because somehow, you have me made stronger and more confident in me I know I can flu the best hindca this Antonia put in my head always say? A man of grade 10+',
+    name: 'Alex B.',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/nenad0.jpg',
+    text: ' Attending Vlady Damas Dealing School  is a great experience for anyone Woking to  become a professional dealer  A friend  atmosphere and useful advice  was provided by the students and staff,  that was helpful in accelerating  the learning process  Instructor Antonia Stoian, is one of the  most professional and patience teachers  that have ever Earned from',
+    name: 'Nenad Sparavalo',
+    position: 'Casino Host',
+  },
+  {
+    image: 'images/testimonials/claudia0.jpg',
+    text: 'Oh when I was a teenager I dreamed of working in casino, fascinated by this world full of lights and you are full of joy, but life has not led the way  Its true, on ships, but I was doing  something completely different of casinc 3 years ago mutt or Putin circumstances They didn"t take Antonia Vali or, in short Vlady Damas Now really my life is beautiful! Professionalism and ethics the highest standards!',
+    name: 'Claudia',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/diana0.jpg',
+    text: 'A wonderful experience, the most professionalism high rates, warm and family atmosphere! The best school in Romania! Mutumesc for everything',
+    name: 'Diana-Laura',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/iulian0.jpg',
+    text: 'When I decided to start croupier school VI ady Damas I didn"t even think how mutt it would be mem life changes Now I feel like a truly free man on this earth,glad that I managed to fulfill my dream of traveling in this wonderful world, let people know new cutters and of course give the insect as acasm I thank Antonia and Vali for God took you in the same path Let"s see you healthy again [ your student',
+    name: 'Iulian',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/elena0.jpg',
+    text: '"I also met happy Romanians" is the title I get fits perfectly when I set foot on a beach gorgeous, or when I see crocodiles in the jungle about 2 meters, or when I"m just having fun bar with people from all over the world "That"s about life on the ship for me, a dream fulfilled And worth the effort to learn new things (even if school time has passed), especially when in Ioc of teachers of friends, who give you advice and I don"t care about Ectii, which makes you a professional you love what i do [',
+    name: 'Elena',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/marius0.jpg',
+    text: "• Vlady moves things to say about the wonderful team behind ein Vali and Antonia - two unmarried friends who they helped me fulfill my dream of reaching croupver on the vessel ' After a long search in the country I had a great luck to find the only company that organize croupier courses  Vali and Antonia „ At first I had a little restraint but which shattered once he met on Vali and Antonia who didn't start from scratch and they made me a real croupier. They were the ones who helped me. They were join me until the last moment of my departure on the ship  and here I am today with my dream come true",
+    name: 'Marius',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/ionut0.jpg',
+    text: 'Thousands of compliments to the croupier school Wlady Damas,the only company that helped me carry out my dream reality - to become a dealer on the ship the cruise After only two months, with the help of friends wonderful - Antonia and Valentin, I reustsa arrive where I wanted to do what I dreamed for a long time Now Im a croupier in Brazil, on a vase croaziermlnca once I want to muttumesc for everything they did for me and for all the support given',
+    name: 'Ionut',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/andrew0.jpg',
+    text: 'Su*rb and professional training - AACasino',
+    name: 'Andrew & Andrea',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/adrian0.jpg',
+    text: 'd —up i e i V I Ady Pct and n3 € d it"s the only one where you invest in some time It is from where iti dugs 2 sni de 18 temin keep me and Sjutst "',
+    name: 'Adrian',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/andreea0.jpg',
+    text: 'A dream comes true is the simple definition and significant of what I lived with In short, for me you have been and will remain those who offered me a huge baggage good mood, quality information and professionalism, all packaged in an impeccable presentation, with the great opportunity to me always feel a Royal level:) Thanks for the moments become unforgettable moments and for the experiences treated by you, with and through what you are, Antonia and Vali- a Vladyoamasdesuflet',
+    name: 'Andrea',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/andreidima0.jpg',
+    text: 'I graduated from Vlady Damas School of Dealers hoping for a cruise ship job, flind attracted by the opportunities to travel and meet new people from all over the world  I can honestly say that I received much more mutt than I was expecting Ia Ia Antonia and Val Atara de basic knowledge that could come from anything so much source, I learned countless "fineturl" of craft, shortcuts and substrates, a kind of bucket of knowledge like "tips and tricks" accumulated in anise years of experience on which Antonia and Vali were mutt than glad to pass it on I"m already on my second contract on the ship and from the United Arab Emirates to Palma de Mallorca, from Greece to England or Holland, don"t forget to be grateful every day to the Stoians for all their help the support they offered me-c',
+    name: 'Andrei',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/flavia0.jpg',
+    text: 'V lady Oa mas - professionalism, fairness, sincerity Vlady Damas - Antonia and Vali two wonderful people (without exaggeration) who taught me everything I know in the moment of fate “They opened my eyes when I had the greatest need & seen as an example of life from all points of view and I want to follow them the sisa example make up at least half of what they are Thank you for what I have achieved I kiss you dearly Flavia',
+    name: 'Flavia',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/nicoleta0.jpg',
+    text: 'Vlady Damas - The school that changed my life! I knew almost nothing about the world of casinos I arrived at VladyOamas school by chance, there I had a journey like the book How do I see things now, from aboard the ship would make me end it, also by Antonia, whom I thank for EVERYTHING! Muttumesc, dear Ooamna ',
+    name: 'Nicoleta',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/lucian0.jpg',
+    text: 'Perfect professionals, recommended by very great experience gained side the pleasure of sharing it with others',
+    name: 'Lucian',
+    position: 'Casino Dealer',
+  },
+  {
+    image: 'images/testimonials/larisacristi0.jpg',
+    text: 'First of all, some wonderful people An advanced level of teaching and for everyone to understand! Maximum seriousness but also a friendly environment who manages to relax and catch you trust"_Games are taught in detail so that be as prepared as possible for employment! we regret nothing and we will always be indebted to you Without you we could not get where we are acunt',
+    name: 'Larisa si Cristi',
+    position: 'Casino Dealer',
+  },
+]
+
+export default testmonials
