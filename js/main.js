@@ -8,7 +8,7 @@ document.documentElement.style.setProperty('--vh', `${vh}px`)
 /*
 ==========================
   GSAP ANIMATION
-==========================  
+==========================
 */
 
 gsap
@@ -63,7 +63,7 @@ gsap
 /*
 ==========================
   MODAL ANIMATION
-==========================  
+==========================
 */
 
 var openModal = document.querySelectorAll('.openModal')
@@ -85,7 +85,7 @@ closeModal.forEach((element) => {
 /*
 ==========================
   TESTMONIALS
-==========================  
+==========================
 */
 
 const testmonialsContent = document.querySelector('#testimonials')
@@ -96,7 +96,7 @@ let index = 0
 const changePerson = () => {
   let currentItem = testmonials[index]
   const content = `
-  
+
     <div class="card-body">
 
       <div class="card-image">
@@ -110,15 +110,13 @@ const changePerson = () => {
       </div>
 
     </div>
-
-    
 `
   cardBox.innerHTML = content
   testmonialsContent.appendChild(cardBox)
 }
 
 rightBtn.addEventListener('click', function () {
-  cardBox.style.display = 'flex'
+  cardBox.style.display = 'block'
   changePerson()
   gsap.from(cardBox, { opacity: 0, x: innerWidth * 1 })
   if (testmonials.length - 1 === index) {
